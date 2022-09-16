@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="my page css">
+    <meta name="keywords" content="school,ammar,qassab">
+    <meta name="author" content="ammar qassab">
+    <title>css</title>
+    <!-- exterlan style -->
+    <link rel="stylesheet" href="css/styleammar.css">
+    <!-- interlan style -->
+    <style>
+    </style>
+    <script src="js/scriptammar.js"></script>
+</head>
+<body>
+  <div class="sidebar-fixed">
+    <button class="button xlarge" onclick="document.getElementById('sidebar').style.display='block'">☰</button>
+  </div>
+  <div class="sidebar bar-block border-right animate-left" style="display:none;" id="sidebar">
+    <button onclick="document.getElementById('sidebar').style.display='none'" class="bar-item button border-bottom large center">Close &times;</button>
+    <a href="#" class="bar-item button border-bottom">Link 1</a>
+    <a href="#" class="bar-item button border-bottom">Link 2</a>
+    <a href="#" class="bar-item button border-bottom">Link 3</a>
+  </div>
+
+    <header class="panel padding-0 display-container bgc-3" style="height: 150px;">
+        <div>
+          <div class="display-middle">
+            <div class="animate-spin">
+              <span class="tag">a</span>
+              <span class="tag">m</span>
+              <span class="tag">m</span>
+              <span class="tag">a</span>
+              <span class="tag">r</span>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div class="panel padding-0">
+      <div  class="card hover-shadow bgc-3">
+          <div class="display-container " onclick="this.parentElement.style.display='none'">
+            <span class="button display-topright large padding-small">&times;</span>
+          </div>
+          <header class="container light-grey">
+            <h2 class="sofia text-shadow">John Doe</h3>
+            <hr>
+          </header>
+            
+          <div class="container">
+            <p class="center" >1 new friend request</p>
+            <hr>
+            <p id="phide" class="hide animate-top">2 new friend request</p>
+            <div class="left wide" style="vertical-align: middle;">
+              <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="Avatar" class="circle hover-opacity" style="width: 50px;height: 50px; ">
+                  President/CEO at Mighty Schools...
+            </div>
+          </div>
+            <button onclick="hideshow('phide')" class="button block textc-2">+ Connect</button>
+      </div>
+    </div>
+
+    <div class="container padding-0">
+      <div class="display-container hover-opacity" style="width: 50%;margin-left: 25%;">
+        <div class="">
+          <img src="https://www.w3schools.com/w3css/img_avatar3.png"  style="width: 100%; height: auto;">
+        </div>
+        <div class="display-hover">
+          <button class="button display-middle  textc-2">ammar</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0 textc-2">
+      <button class="button  mobile ripple outline-0">Home</button>
+      <button class="button  mobile">Link 1</button>
+      <button class="button  mobile disabled">Link 2</button>
+      <button class="btn  mobile">Link 3</button>
+    </div>
+    <div class="panel padding-0 textc-2 center">
+      <div class="show-inline-block" >
+        <div class="bar">
+          <button class="bar-item  button">Button</button>
+          <button class="bar-item  button">Button</button>
+          <button class="bar-item button">Button</button>
+        </div>
+        <div class="show-inline-block" >
+          <div class="bar">
+            <button class="bar-item  button">Button</button>
+            <button class="bar-item button">Button</button>
+            <button class="bar-item  button">Button</button>
+          </div>
+        </div>
+    </div>
+    <div class="panel padding-0 textc-2 center">
+      <div class="bar-block">
+        <button class="  button left">&laquo; Button</button>
+        <button class="  button right">Button &raquo;</button>
+      </div>
+    </div>
+    <div class="panel padding-0 center"></div>
+      <div class="bar center textc-2">
+        <button class="button circle">+</button>
+        <button class="button circle">+</button>
+      </div>
+    </div>
+    <div class="panel padding-0 textc-2 center">
+      <div class="bar-block">
+        <button class="bar-item button ">Button</button>
+        <button class="bar-item button right-align">Button</button>
+        <button class="bar-item button ">Button</button>
+      </div>
+    </div>
+    <div class="panel padding-0">
+      <h2>Basic Table</h2>
+      <p>The table class defines a basic table:</p>
+    
+      <div class="responsive card-2 hover-shadow" >
+        <table class="table bordered border-table striped centered hovertabl small">
+          <thead>
+            <tr>
+              <th></th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag left">1</span></td>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td><span class="badge left">2</span></td>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td><span class="badge left">3</span></td>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+            </tr>
+            <tr>
+              <td><span class="badge left">4</span></td>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="panel padding-0 card-2 hover-shadow">
+      <ul class="ul hoverul borderul">
+        <li class="display-container">ammar 1
+          <div class="display-right" onclick="this.parentElement.style.display='none'">
+            <span class="button large padding-small">
+              <span class="img">&times;</span>
+            </span>
+          </div>
+        </li>
+        <li class="display-container">ammar 2
+          <div class="display-right" onclick="this.parentElement.style.display='none'">
+            <span class="button large padding-small">
+              <span class="img">&times;</span>
+            </span>
+          </div>
+        </li>
+        <li class="display-container">ammar 3
+          <div class="display-right" onclick="this.parentElement.style.display='none'">
+            <span class="button large padding-small">
+              <span class="img">&times;</span>
+            </span>
+          </div>
+        </li>
+        <li class="display-container">ammar 4
+          <div class="display-right" onclick="this.parentElement.style.display='none'">
+            <span class="button large padding-small">
+              <span class="img">&times;</span>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="panel padding-0">
+        <h2>Image Text</h2>
+        <p>Position content inside an image with the display-<em>classes</em> - Note that we have added the container class to get more padding:</p>
+      
+        <div class="display-container textc-2 ">
+          <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Lights" style="width:100%">
+          <div class="display-topleft"><p>Top Left</p></div>
+          <div class="display-topright"><p>Top Right</p></div>
+          <div class="display-bottomleft"><p>Bottom Left</p></div>
+          <div class="display-bottomright"><p>Bottom Right</p></div>
+          <div class="display-left"><p>Left</p></div>
+          <div class="display-right"><p>Right</p></div>
+          <div class="display-middle">Middle</div>
+          <div class="display-topmiddle "><p>Top Middle</p></div>
+          <div class="display-bottommiddle "><p>Bottom Middle</p></div>
+        </div>
+    </div>
+
+    <div class="container bgc-3">
+      <h1>Summer 2015</h1>
+    </div>
+    
+    <div class="panel padding-0 row-padding">
+      <div class="third ">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-opacity" >
+          <div class="container">
+            <h5>hover-opacity</h5>
+          </div>
+        </div>
+      </div>
+    
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-grayscale" >
+          <div class="container">
+            <h5>hover-grayscale</h5>
+          </div>
+        </div>
+      </div>
+    
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-sepia" >
+          <div class="container">
+            <h5>hover-sepia</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel padding-0 row-padding">
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-contrast" >
+          <div class="container">
+            <h5>hover-contrast</h5>
+          </div>
+        </div>
+      </div>
+    
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-blur" >
+          <div class="container">
+            <h5>hover-blur</h5>
+          </div>
+        </div>
+      </div>
+    
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-saturate" >
+          <div class="container">
+            <h5>hover-saturate</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel padding-0 row-padding">
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="drop-shadow-max" >
+          <div class="container">
+            <h5>drop-shadow-max</h5>
+          </div>
+        </div>
+      </div>
+    
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-blur" >
+          <div class="container">
+            <h5>hover-blur</h5>
+          </div>
+        </div>
+      </div>
+    
+      <div class="third">
+        <div class="card">
+          <img src="css/images/a.jpg" style="width:100%" class="hover-saturate" >
+          <div class="container">
+            <h5>hover-saturate</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0 card-2">
+      <div class="container padding-0">
+        <h2>Input Colors</h2>
+      </div>
+      <form class="container padding-0" action="/action_page.php">
+        <label class="" for="text"><b>First Name</b></label>
+        <input class="input focus-border round-medium animate-input" id="text" name="first" type="text" style="width: 30%;" placeholder="text" required>
+        
+        <input class="focus-border round-medium checkbox checked" id="checkbox" name="last" type="checkbox">
+        <label for="checkbox">Last Name</label>
+        <br>
+        <h2>Radio Buttons</h2>
+        <div>
+        <input class="radio checked" type="radio" name="gender" value="male" checked>
+        <label>Male</label>
+        </div>
+        <div>
+        <input class="radio checked" type="radio" name="gender" value="female">
+        <label>Female</label>
+        </div>
+        <div>
+        <input class="radio checked" type="radio" name="gender" value="" disabled>
+        <label>Don't know (Disabled)</label>
+        </div>
+        <br>
+        <h2>checkbox Buttons</h2>
+        <div>
+        <input class="checked checkbox" type="checkbox" name="gender" value="male" checked>
+        <label>Male</label>
+        </div>
+        <div>
+        <input class="checked checkbox" type="checkbox" name="gender" value="female">
+        <label>Female</label>
+        </div>
+        <div>
+        <input class="checked checkbox" type="checkbox" name="gender" value="" disabled>
+        <label>Don't know (Disabled)</label>
+        </div>
+        <br>
+        <div>
+          <select class="select focus-border" name="option">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <div class="row-padding padding-0 ">
+            <div class="third padding-left-0">
+              <input class="input" type="text" placeholder="One" disabled>
+            </div>
+            <div class="third">
+              <input class="input" type="text" placeholder="Two" readonly>
+            </div>
+            <div class="third padding-right-0">
+              <input class="input focus-border" type="text" placeholder="Three" required>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row-padding padding-0 ">
+          <div class="half padding-left-0">
+            <label>First Name</label>
+            <input class="input" type="text" placeholder="One">
+          </div>
+          <div class="half padding-right-0">
+            <label>Last Name</label>
+            <input class="input" type="text" placeholder="Two">
+          </div>
+        </div>
+        <br>
+        <input type="submit" class="btn textc-1 bgc-3 medium margin-bottom" value="Register">
+      </form>
+    </div>
+    
+
+    <div class="panel padding-0 textc-2 center">
+      <div class="bar-block">
+        <button class="button left"onclick="openFullscreen();">
+          open Fullscreen</button>
+        <button class="button right"onclick="closeFullscreen();">
+          close Fullscreen</button>
+      </div>
+    </div>
+
+    <div class="panel padding-0" >
+      <div class="row-padding  border content ">
+        <div class="col half border">
+          <p>half 50%</p>
+        </div>
+        <div class="col half border">
+          <p>half 50%</p>
+        </div>
+        <div class="third border">
+          <p>third 33%</p>
+        </div>
+        <div class="third border">
+          <p>third 33%</p>
+        </div>
+        <div class="third border">
+          <p>third 33%</p>
+        </div>
+        <div class="third border">
+          <p>third 33%</p>
+        </div>
+        <div class="twothird border bgc-3">
+          <p>twothird 66%</p>
+        </div>
+        <div class="quarter border">
+          <p>quarter 25%</p>
+        </div>
+        <div class="quarter border">
+          <p>quarter 25%</p>
+        </div>
+        <div class="quarter border">
+          <p>quarter 25%</p>
+        </div>
+        <div class="quarter border">
+          <p>quarter 25%</p>
+        </div>
+        <div class="quarter border">
+          <p>quarter 25%</p>
+        </div>
+        <div class="threequarter border bgc-3">
+          <p>threequarter 75%</p>
+        </div>
+        <div class="quarter border">
+          <p>quarter 25%</p>
+        </div>
+        <div class="half border bgc-3">
+          <p>quarter 50%</p>
+        </div>
+        <div class="quarter border">
+          <p>quarter 25%</p>
+        </div>
+        <div class="col border" style="width: 20%;" >
+          <p>col 20%</p>
+        </div>
+        <div class="col border" style="width: 60%;" >
+          <p>col 60%</p>
+        </div>
+        <div class="col border" style="width: 20%;" >
+          <p>col 20%</p>
+        </div>
+        <div class="col border" style="width: 20%;" >
+          <p>col 20%</p>
+        </div>
+        <div class="col border" style="width: 20%;margin-left: 60%;" >
+          <p>col 20%</p>
+        </div>
+        <div class="colrest border" style="width: 150px;" >
+          <p>col 150px</p>
+        </div>
+        <div class="colrest border" style="width: 100px;" >
+          <p>col 100px</p>
+        </div>
+        <div class="rest border bgc-3">
+          <p>rest width:auto</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="row-padding" >
+        <div class="col s33 border">
+          <p>col s33</p>
+        </div>
+        <div class="col s33 border">
+          <p>col s33</p>
+        </div>
+        <div class="col s33 border">
+          <p>col s33</p>
+        </div>
+        <div class="col s8 border">
+          <p>s8</p>
+        </div>
+        <div class="col s41 border">
+          <p>col s41</p>
+        </div>
+        <div class="col s50 border">
+          <p>col s50</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="row-padding" >
+        <div class="col m33 border">
+          <p>col m33</p>
+        </div>
+        <div class="col m33 border">
+          <p>col m33</p>
+        </div>
+        <div class="col m33 border">
+          <p>col m33</p>
+        </div>
+        <div class="col m8 border">
+          <p>m8</p>
+        </div>
+        <div class="col m41 border">
+          <p>col m41</p>
+        </div>
+        <div class="col m50 border">
+          <p>col m50</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="row-padding" >
+        <div class="col l33 border">
+          <p>col l33</p>
+        </div>
+        <div class="col l33 border">
+          <p>col l33</p>
+        </div>
+        <div class="col l33 border">
+          <p>col l33</p>
+        </div>
+        <div class="col l8 border">
+          <p>l8</p>
+        </div>
+        <div class="col l41 border">
+          <p>col l41</p>
+        </div>
+        <div class="col l50 border">
+          <p>col l50</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="responsive" >
+        <div class="row-padding" style="min-width: 200px;">
+          <div class="col l16 m25 s33 border">
+            <p>l16 m25 s33</p>
+          </div>
+          <div class="col l66 m50 s33 border">
+            <p>l66 m50 s33</p>
+          </div>
+          <div class="col l16 m25 s33 border">
+            <p>l16 m25 s33</p>
+          </div>
+          <div class="col l8 m16 s25 border">
+            <p>l8 m16 s25</p>
+          </div>
+          <div class="col l83 m66 s50 border">
+            <p>l83 m66 s50</p>
+          </div>
+          <div class="col l8 m16 s25 border">
+            <p>l8 m16 s25</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0 responsive">
+      <div class="cell-row" style="min-width: 200px;">
+        <div class="border cell bgc-3">
+          <p>Hello W3.CSS Layout.</p>
+          <p>Hello W3.CSS Layout.</p>
+          <p>Hello W3.CSS Layout.</p>
+          <p>Hello W3.CSS Layout.</p>
+        </div>
+        <div class="border cell cell-middle bgc-4">
+          <p>Hello W3.CSS Layout.</p>
+        </div>
+        <div class="border cell cell-bottom bgc-3">
+          <p>Hello W3.CSS Layout.</p>
+        </div>
+      </div>
+      <div class="cell-row" style="min-width: 200px;">
+        <div class="border cell bgc-4 mobile">
+          <p>Hello W3.CSS Layout.</p>
+          <p>Hello W3.CSS Layout.</p>
+          <p>Hello W3.CSS Layout.</p>
+          <p>Hello W3.CSS Layout.</p>
+        </div>
+        <div class="border cell cell-middle bgc-3 mobile">
+          <p>Hello W3.CSS Layout.</p>
+        </div>
+        <div class="border cell cell-bottom bgc-4 mobile">
+          <p>Hello W3.CSS Layout.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="center animate-top">
+        <h1>Animation is Fun!</h1>
+        <p>The animate-right class slides in an element from the right.</p>
+      </div>
+      <div class="center animate-left">
+        <h1>Animation is Fun!</h1>
+        <p>The animate-right class slides in an element from the right.</p>
+      </div>
+      <div class="center animate-right">
+        <h1>Animation is Fun!</h1>
+        <p>The animate-right class slides in an element from the right.</p>
+      </div>
+      <div class="center animate-bottom">
+        <h1>Animation is Fun!</h1>
+        <p>The animate-right class slides in an element from the right.</p>
+      </div>
+      <div class="center animate-opacity">
+        <h1>Animation is Fun!</h1>
+        <p>The animate-right class slides in an element from the right.</p>
+      </div>
+      <div class="center animate-zoom">
+        <h1>Animation is Fun!</h1>
+        <p>The animate-right class slides in an element from the right.</p>
+      </div>
+      <div class="center animate-fading">
+        <h1>Animation is Fun!</h1>
+        <p>The animate-right class slides in an element from the right.</p>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="bar bgc-1 textc-2">
+        <a href="#" class="bar-item button">London</a>
+        <a href="#" class="bar-item button">Paris</a>
+        <a href="#" class="bar-item button">Tokyo</a>
+      </div>
+      <br>
+      <div class="bar bgc-1 textc-2 display-container">
+        <a href="#" class="bar-item button mobile">London</a>
+        <a href="#" class="bar-item button mobile">Paris</a>
+        <a href="#" class="bar-item button mobile display-right display-right-mobile">Tokyo</a>
+      </div>
+      <br>
+      <div class="bar-block center bgc-1 textc-2">
+        <a href="#" class="bar-item button">London</a>
+        <a href="#" class="bar-item button">Paris</a>
+        <a href="#" class="bar-item button">Tokyo</a>
+      </div>
+      <br>
+      <div class="bar-block bgc-1 textc-2" style="width:120px">
+        <a href="#" class="bar-item button">London</a>
+        <a href="#" class="bar-item button">Paris</a>
+        <a href="#" class="bar-item button">Tokyo</a>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="bar bgc-1 textc-2">
+        <a href="#" class="bar-item button">Home</a>
+        <a href="#" class="bar-item button">Link 1</a>
+        <div class="dropdown-hover">
+          <button class="button">Dropdown<span></span></button>
+          <div class="dropdown-content bar-block card-4"><!--bar-block -->
+            <a href="#" class="bar-item button">Link 1</a>
+            <a href="#" class="bar-item button">Link 2</a>
+            <a href="#" class="bar-item button">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown-hover">
+          <button class="button">Dropdown<span></span></button>
+          <div class="dropdown-content  card-4"><!--bar-block -->
+            <a href="#" class="bar-item button">Link 1</a>
+            <a href="#" class="bar-item button">Link 2</a>
+            <a href="#" class="bar-item button">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="bar bgc-1 textc-2">
+        <a href="#" class="bar-item button">Home</a>
+        <a href="#" class="bar-item button">Link 1</a>
+        <div class="dropdown-click">
+          <button onclick="hideshow('phide1')" class="button">Click me<span></span></button>
+          <div id="phide1" class="dropdown-content bar-block card-4">
+            <a href="#" class="bar-item button">Link 1</a>
+            <a href="#" class="bar-item button">Link 2</a>
+            <a href="#" class="bar-item button">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="  bar-block bgc-1 textc-2 card" style="width:160px;">
+        <a href="#" class="bar-item button">Link 1</a>
+        <button class="bar-item button" onclick="hideshow('demoAcc')">Accordion </button>
+        <div id="demoAcc" class="hide bgc-2 textc-1 card-2">
+          <a href="#" class="bar-item button">Link</a>
+          <a href="#" class="bar-item button">Link</a>
+        </div>
+      
+        <div class="dropdown-click">
+          <div class="bar-item button" onclick="hideshow('demoDrop')">
+            Dropdown
+          </div>
+          <div id="demoDrop" class="dropdown-content textc-1 card-2">
+            <a href="#" class="bar-item button">Link</a>
+            <a href="#" class="bar-item button">Link</a>
+          </div>
+        </div>
+        <a href="#" class="bar-item button">Link 2</a>
+        <a href="#" class="bar-item button">Link 3</a>
+      </div>
+    </div>
+
+    <div class="panel padding-0 border borderc-1" >
+      <div class="row bgc-1 border-bottom borderc-1">
+        <button class="col s33 button border hover-bgc-4 demo bgc-4"
+                onclick="currentDiv(1,'demo','city',' bgc-4')">London
+        </button>
+        <button class="col s33 button border hover-bgc-4 demo"
+                onclick="currentDiv(2,'demo','city',' bgc-4')">Paris
+        </button>
+        <button class="col s33 button border hover-bgc-4 demo"
+                onclick="currentDiv(3,'demo','city',' bgc-4')">Tokyo
+        </button>
+      </div>
+      
+      <div class="container padding-0 center" >
+        <div id="London" class="animate-zoom city">
+          <h2>London</h2>
+          <p>London is the capital city of England.</p>
+        </div>
+        
+        <div id="Paris" class="animate-zoom city" style="display:none">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p> 
+        </div>
+        
+        <div id="Tokyo" class="animate-zoom city" style="display:none">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="bar border round">
+          <button class="bar-item button hover-bgc-4" onclick="plusDivs(-1,'demo1','city',' bgc-4')">&laquo;</button>
+          <button class="bar-item button hover-bgc-4 bgc-4 demo1" onclick="currentDiv(1,'demo1','city',' bgc-4')">1</button>
+          <button class="bar-item button hover-bgc-4 demo1" onclick="currentDiv(2,'demo1','city',' bgc-4')">2</button>
+          <button class="bar-item button hover-bgc-4 demo1" onclick="currentDiv(3,'demo1','city',' bgc-4')">3</button>
+          <button class="bar-item button hover-bgc-4" onclick="plusDivs(1,'demo1','city',' bgc-4')">&raquo;</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <div class="border">
+        <div id="myBar" class="bgc-4 center" style="width:20%">
+          <div id="value">20%</div>
+        </div>
+      </div>
+      <br>
+      <div class="border" >
+        <div id="myBar2" class="bgc-4 center" style="width:20%;height: 22px;"></div>
+      </div>
+      <div id="value2">20%</div>
+      <br>
+      <button class="button" onclick="move(20,'myBar','value'),move(20,'myBar2','value2')">Click Me</button>
+      </div>
+    </div>
+    <div class="panel padding-0">
+      <h2>W3.CSS Modal</h2>
+      <p>Add the card-* class to the modal-content container to display the modal as a card.</p>
+      <button onclick="document.getElementById('modal').style.display='block'" class="button black">Open Modal</button>
+    
+      <div id="modal" class="modal">
+        <div class="modal-content card-4 animate-top">
+          <header class="container width-100 bgc-3"> 
+            <span onclick="document.getElementById('modal').style.display='none'" class="button display-topright xlarge">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="container width-100">
+            <p>Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="container width-100 bgc-3">
+            <p>Modal Footer</p>
+            <span onclick="document.getElementById('modal').style.display='none'" class="button display-bottomright large">Close</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0">
+      <div class="row-padding">
+        <div class="third">
+          <img  src="https://www.w3schools.com/w3css/img_snowtops.jpg" style="width:100%;cursor:pointer" 
+                onclick="modalimg(this)" class="hover-opacity">
+        </div>
+        <div class="third">
+          <img  src="https://www.w3schools.com/w3css/img_lights.jpg" style="width:100%;cursor:pointer" 
+                onclick="modalimg(this)" class="hover-opacity">
+        </div>
+        <div class="third">
+          <img  src="https://www.w3schools.com/w3css/img_mountains.jpg" style="width:100%;cursor:pointer" 
+                onclick="modalimg(this)" class="hover-opacity">
+        </div>
+      </div>
+      
+      <div id="modal01" class="modal padding-16" onclick="this.style.display='none'" style="height: 100%;">
+        <div class="modal-content animate-zoom">
+          <img id="img01" class="width-100">
+        </div>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <h2>Animated Tooltips</h2>
+      <p class="tooltip">
+        Hover
+        <span class="text tag animate-opacity text-positiontop">9 million inhabitants</span>
+        over the sentence below!
+      </p>
+      <p class="tooltip">
+        London
+        <span class="text tag animate-opacity text-positionbottom">9 million inhabitants</span>
+        is the capital of England.
+      </p>
+      <h2>Image as a Tooltip</h2>
+      <h2>Hover Over the Picture!</h2>
+      <div class="tooltip">
+        <img src="https://www.w3schools.com/w3css/img_car.jpg" alt="Car" style="width:100%">
+        <p class="text">
+          A car is a wheeled, self-powered motor vehicle used for transportation. 
+          Most definitions of the term specify that cars typically have four wheels.(Wikipedia)
+        </p>
+      </div>
+    </div>
+    <div class="panel card bgc-3"> 
+      <h4>JavaScript Example</h4>
+      <div class="code jsHigh notranslate">
+        fruits[0] = "Banana";<br>
+        fruits[1] = "Apple";<br>
+        fruits[2] = "Mango";<br>
+        fruits[3] = "Plum";<br>
+      </div>
+    </div>
+    <div class="panel padding-0" >
+      <h2>Filter Table</h2>
+      <p>Search for a name in the input field.</p>
+      <input class="input border padding" type="text" placeholder="Search for names.." id="myInputtable" onkeyup="filtertable('myInputtable','myTable')">
+      <table class="table-all margin-top" id="myTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Berglunds snabbkop</td>
+            <td>Sweden</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Koniglich Essen</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Italy</td>
+          </tr>
+          <tr>
+            <td>North/South</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Paris specialites</td>
+            <td>France</td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <p><strong>Tip:</strong> Remove toUpperCase() if you want to perform a case-sensitive search.</p>
+      <p>Change tr[i].getElementsByTagName('td')[0] to [1] if you want to search for "Country" (index 1) instead of "Name" (index 0).</p>
+    </div>
+    <div class="panel padding-0" >
+      <h2>Filter List</h2>
+      <p>Search for a name in the input field.</p>
+
+      <input class="input border padding" type="text" placeholder="Search for names.." id="myInputul" onkeyup="filterul('myInputul','myUL')">
+      <ul class="ul margin-top" id="myUL">
+        <li>Adele</li>
+        <li>Agnes</li>
+        <li>Billy</li>
+        <li>Bob</li>
+        <li>Calvin</li>
+        <li>Christina</li>
+        <li>Cindy</li>
+      </ul>
+    </div>
+    <div class="panel padding-0" >
+      <div class="dropdown-click">
+        <button class="button black" onclick="hideshow('phide2')">Dropdown</button>
+        <div class="dropdown-content bar-block card bgc-3" id="phide2">
+          <input class="input padding" type="text" placeholder="Search.." id="myInputlist" onkeyup="filterdropdown('myInputlist','phide2')">
+          <a class="bar-item button" href="#about">About</a>
+          <a class="bar-item button" href="#base">Base</a>
+          <a class="bar-item button" href="#blog">Blog</a>
+          <a class="bar-item button" href="#contact">Contact</a>
+          <a class="bar-item button" href="#custom">Custom</a>
+          <a class="bar-item button" href="#support">Support</a>
+          <a class="bar-item button" href="#tools">Tools</a>
+        </div>
+      </div>
+    </div>
+
+    <script src=""></script>
+</body>
+</html>
